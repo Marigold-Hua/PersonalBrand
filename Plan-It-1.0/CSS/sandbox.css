@@ -1,0 +1,86 @@
+/* General Styling */
+body {
+    background-color: black;
+    justify-content: center;
+    color: #deeda0;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button {
+    background-color: #deeda0;
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    height: 40px;
+    padding: 10px 10px;
+}
+
+.calendar-container{
+    display:flex;
+    justify-content: center;
+}
+
+/* Timekey Styling */
+.cal-header{
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100px;
+    margin: 8px;
+    
+}
+
+.hourLabel{
+    height: 80px;
+    line-height: 80px;
+}
+
+/* Calendar styling */
+.week-container{
+    display: flex;
+    padding: 10px;
+}
+
+.day {
+    margin: 8px;
+    border-radius: 20px;
+}
+
+.day-header{
+    border: #deeda0 solid 3px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.hourContainer {
+    border: #deeda0 solid 3px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.quarter {
+    width: 100px;
+    height: 20px;
+}
+
+.quarter:hover {
+    background-color: #deeda0;
+}
+
+/* Project Styling*/
+#project-manager {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-evenly;
+    margin: 1%;
+    gap: 1%;
+    padding-top: 1%;;
+}
+
+.project {
+    border-radius: 30px;
+    padding: 9px;
+}
