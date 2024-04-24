@@ -22,8 +22,8 @@ let projectNum = 0;
 let projectSelected; //so that whenever projectNum is updated, project select is out of range. 
 let projectList;
 
-//const dayArray = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-const dayArray = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+const dayArray = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+//const dayArray = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 const colorArray = ['#76da71', '#71daac','#71cfda', '#719bda', '#7371da', '#c071da'];
 const projectNames = ['Exercise', 'PUI Project', 'Webtoon', 'Meals', 'Social', 'Research'];
 
@@ -50,6 +50,8 @@ quarters.forEach(quarter => {
 quarter.addEventListener('click', addTask); 
 });
 */
+
+/* Trial - add event listener to all quarters
 //Get all elements with quarter class
 const allQuarters = document.querySelectorAll('.quarter');
 
@@ -63,12 +65,21 @@ function test(event){
     event.stopPropagation();
     console.log('working');
 }
+*/
 
 
 //Function calls all functions used to make calendar
 function makeCalendar(){
     makeTimeKey();
     makeWeek();
+}
+
+//test event listner additions
+document.querySelector('#Sunday-17-4').addEventListener('click', test);
+//document.querySelector('.week-container').addEventListener('click', test);
+
+function test(){
+    console.log("clicked");
 }
 
 //Generates time key
